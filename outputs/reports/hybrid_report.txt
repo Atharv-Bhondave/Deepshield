@@ -1,0 +1,19 @@
+DEEPSHIELD EVALUATION REPORT - HYBRID
+============================================================
+Accuracy:  0.783400
+Precision: 0.792346
+Recall:    0.768100
+F1 Score:  0.780035
+ROC-AUC:   0.867791
+Avg Precision (AP): 0.865829
+============================================================
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+        Real     0.7750    0.7987    0.7867     10000
+        Fake     0.7923    0.7681    0.7800     10000
+
+    accuracy                         0.7834     20000
+   macro avg     0.7837    0.7834    0.7833     20000
+weighted avg     0.7837    0.7834    0.7833     20000

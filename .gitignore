@@ -18,20 +18,26 @@ ENV/
 # Jupyter Notebooks checkpoints
 .ipynb_checkpoints/
 
-# PyTorch / Model Checkpoints (large binary files)
+# PyTorch / Model Checkpoints (large binary files ~150MB each — use Git LFS or cloud storage)
 checkpoints/
 *.pth
 *.pt
 *.ckpt
 
-# Dataset (large image files – do not push raw data)
+# Dataset (100k+ images — too large for GitHub, use Kaggle/Drive link)
 dataset/
 
-# Outputs (generated plots, logs, reports)
-outputs/
+# TensorBoard binary event logs
+outputs/logs/
+
+# SQLite database and raw log files
+*.log
+*.db
+
+# Very large training log text file
 training_log.txt
 
-# Streamlit
+# Streamlit local config
 .streamlit/
 
 # IDE / OS
@@ -41,10 +47,3 @@ training_log.txt
 *.swo
 Thumbs.db
 .DS_Store
-
-# Logs
-*.log
-*.db
-
-# Reports (auto-generated)
-reports/
